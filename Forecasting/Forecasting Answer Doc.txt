@@ -1,0 +1,33 @@
+Forecast the CocaCola prices and Airlines Passengers data set. Prepare a document for each model explaining 
+how many dummy variables you have created and RMSE value for each model. Finally which model you will use for 
+Forecasting.
+
+ANSWER
+
+
+# COCACOLA DATASET
+In this model we have created total four dummy variables i.e. Q1 Q2 Q3 Q4 
+among all the models we have tried rmse of additive seasobality with quadratic trend has given the lowest error hence we will choose it 
+
+Model	RMSE_values
+4	rmse_add_sea_quad	277.351077
+6	rmse_Mult_add_sea	448.867818
+2	rmse_quad	457.735736
+0	rmse_linear	752.923393
+3	rmse_add_sea	1850.466546
+5	rmse_Mult_sea	1908.250395
+1	rmse_exp	4387.940545
+
+
+#AIRLINE DATASET
+
+In this model we have created dummy variables for months as jan, feb, mar, apr and so on. As multiplicative additive seasonality have lowest rmse value we will choose it for our predictions.
+
+MODEL	RMSE_Values
+6	rmse_Mult_add_sea	10.823937
+1	rmse_exp	47.955148
+2	rmse_quad	50.659546
+0	rmse_linear	55.674170
+3	rmse_add_sea	134.344799
+5	rmse_Mult_sea	141.688507
+4	rmse_add_sea_quad	329.660326
